@@ -1,95 +1,101 @@
+"use client";
 import Image from "next/image";
+import React, { useState, useRef } from "react";
+import { Camera } from "react-camera-pro";
 import styles from "./page.module.css";
-
+import Sheet from "@mui/joy/Sheet";
+import Grid from "@mui/joy/Grid";
+import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
+import Button from "@mui/joy/Button";
+import Tabs from "./components/tabs"
 export default function Home() {
+  const camera = useRef(null);
+  const [image, setImage] = useState(null);
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div onCopy={(event)=>{
+      event.preventDefault();
+    }}>
+      <Grid container spacing={2} sx={{ flexGrow: 1 }}>
+        <Grid xs={10}>
+          <Sheet
+            variant="soft"
+            color="neutral"
+            sx={{ m: 0, borderRadius: "lg" }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+                     <Tabs/>
+          </Sheet>
+        </Grid>
+        <Grid xs={2}>
+          <Sheet
+            variant="soft"
+            color="neutral"
+            sx={{
+              p: 10,
+              borderRadius: "lg",
+            }}
+          >
+            {/* <div> */}
+            <Camera ref={camera} />
+            {/* <button onClick={() => setImage(camera.current.takePhoto())}>Take photo</button> */}
+            {/* <img src={image} alt='Taken photo'/> */}
+            {/* </div> */}
+          </Sheet>
+        </Grid>
+        <Grid xs={10}>
+          <Sheet
+            variant="soft"
+            color="neutral"
+            sx={{ p: 2, borderRadius: "lg" }}
+          >
+   
+          </Sheet>
+        </Grid>
+        <Grid xs={2}>
+          <Sheet
+            variant="soft"
+            color="neutral"
+            sx={{ p: 2, borderRadius: "lg" }}
+          >
+            k
+          </Sheet>
+        </Grid>
+        <Grid xs={10}>
+          <Sheet
+            variant="soft"
+            color="neutral"
+            sx={{ p: 2, borderRadius: "lg" }}
+          >
+            <Button size="lg">SAVE & NEXT</Button>
+            <Button sx={{ ml: 2 }} size="lg" color="neutral" variant="solid">
+              CLEAR
+            </Button>
+            <Button sx={{ ml: 2 }} size="lg" color="warning">
+              SAVE & MARK FOR REVIEW
+            </Button>
+            <Button sx={{ ml: 2 }} size="lg" color="success">
+              MARK FOR REVIEW & NEXT
+            </Button>
+         <br/>
+          <Button size="lg" sx={{ m: 1 }} startDecorator={<ArrowBackIosNewRoundedIcon/>}>BACK</Button>
+          <Button size="lg" sx={{ m: 1 }} endDecorator={<ArrowForwardIosRoundedIcon  />}>NEXT </Button>
+          </Sheet>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </Grid>
+        <Grid xs={2}>
+          <Sheet
+            variant="soft"
+            color="neutral"
+            sx={{ p: 0, borderRadius: "lg" }}
+          >
+            <Button fullWidth size="lg">
+              Summit Test
+            </Button>
+          </Sheet>
+        </Grid>
+        
+      </Grid>
+    </div>
   );
 }
