@@ -18,7 +18,8 @@
     "react": "^18",
     "react-camera-pro": "^1.4.0",
     "react-dom": "^18",
-    "react-timer-hook": "^3.0.7"
+    "react-timer-hook": "^3.0.7",
+    "react-webcam": "^7.2.0"
   },
   "devDependencies": {
     "typescript": "^5",

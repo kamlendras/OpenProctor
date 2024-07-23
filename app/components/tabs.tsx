@@ -14,6 +14,7 @@ export default function TabsBasic() {
     defaultValue={0}
     sx={{
       // width: 343,
+      height:"85vh",
       borderRadius: 'lg',
       boxShadow: 'lg',
       overflow: 'auto',
