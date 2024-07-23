@@ -64,9 +64,14 @@ export default function Header() {
         }}
       >
         <ColorSchemeToggle />
-        <Link href="/login">
-         
-          <Button variant="solid" size="lg">
+        <Link href="/instructions">
+        <Button variant="solid" size="lg">
+        Instructions
+          </Button>
+          </Link>
+          <Link href="/login">
+
+          <Button variant="solid" size="lg" sx={{ml:1}}>
             Log Out
           </Button>
         </Link>

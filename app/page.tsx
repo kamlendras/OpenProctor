@@ -9,7 +9,9 @@ import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRound
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import Button from "@mui/joy/Button";
 import Tabs from "./components/tabs"
+import Timer from "./components/timer"
 export default function Home() {
+  
   const camera = useRef(null);
   const [image, setImage] = useState(null);
   return (
@@ -48,7 +50,7 @@ export default function Home() {
             color="neutral"
             sx={{ p: 2, borderRadius: "lg" }}
           >
-   
+   jj
           </Sheet>
         </Grid>
         <Grid xs={2}>
@@ -57,7 +59,7 @@ export default function Home() {
             color="neutral"
             sx={{ p: 2, borderRadius: "lg" }}
           >
-            k
+            <Timer/>
           </Sheet>
         </Grid>
         <Grid xs={10}>
