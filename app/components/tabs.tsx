@@ -48,7 +48,7 @@ export default function TabsBasic() {
             </ListItemDecorator>
             Chemistry</Tab>
         <Tab disableIndicator variant="soft" >  <ListItemDecorator>
-        <img src="math.svg" alt="devices" width="30" height="30" />
+        <img src="math3.svg" alt="devices" width="30" height="30" />
             </ListItemDecorator>Mathematics</Tab>
             <Tab disableIndicator variant="soft" >  <ListItemDecorator>
         <img src="bio.svg" alt="devices" width="30" height="30" />
