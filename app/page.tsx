@@ -1,25 +1,18 @@
 "use client";
-import Image from "next/image";
-import React, { useState, useRef } from "react";
-import { Camera } from "react-camera-pro";
-import styles from "./page.module.css";
+import React, { useState, useRef} from "react";
 import Sheet from "@mui/joy/Sheet";
 import Grid from "@mui/joy/Grid";
-import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import Button from "@mui/joy/Button";
 import Tabs from "./components/tabs";
 import Timer from "./components/timer";
-import Stack from "@mui/joy/Stack";
 import Modal from "@mui/joy/Modal";
-import ModalClose from "@mui/joy/ModalClose";
+import Link from '@mui/joy/Link';
 import ModalDialog, { ModalDialogProps } from "@mui/joy/ModalDialog";
 import DialogTitle from "@mui/joy/DialogTitle";
 import DialogContent from "@mui/joy/DialogContent";
 import CustomWebcam from "./components/CustomWebcam";
 import Divider from '@mui/joy/Divider';
 import DialogActions from '@mui/joy/DialogActions';
-import DeleteForever from '@mui/icons-material/DeleteForever';
 import WarningRoundedIcon from '@mui/icons-material/WarningRounded';
 export default function Home() {
   const [open, setOpen] = React.useState<boolean>(false);
@@ -463,9 +456,11 @@ export default function Home() {
             Are you sure you want to quit the test?
           </DialogContent>
           <DialogActions>
+          <Link href="/score">
             <Button variant="solid" color="danger" onClick={() => setOpen(false)}>
             Yes
             </Button>
+            </Link>
             <Button variant="plain" color="neutral" onClick={() => setOpen(false)}>
               Cancel
             </Button>

@@ -1,4 +1,5 @@
-import * as React from "react";
+"use client"
+import React, {useCallback} from 'react';
 import Typography from "@mui/joy/Typography";
 import Divider from '@mui/joy/Divider';
 import Checkbox from '@mui/joy/Checkbox';
@@ -7,9 +8,10 @@ import Button from "@mui/joy/Button";
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import Grid from "@mui/joy/Grid";
 import Sheet from "@mui/joy/Sheet";
-
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 export default function TypographyScales() {
+  const handle = useFullScreenHandle();
   return (
     <Sheet
     variant="soft"
@@ -98,7 +100,7 @@ export default function TypographyScales() {
       <Grid xs={11}></Grid>
       <Grid xs={1}>
       <Link href="/">
-      <Button size="lg" sx={{ m: 1 }} endDecorator={<ArrowForwardIosRoundedIcon  />}>START </Button>        
+      <Button size="lg" sx={{ m: 1 }} endDecorator={<ArrowForwardIosRoundedIcon  />} onClick={handle.enter}>START </Button>        
           </Link>
       </Grid>
       </Grid>

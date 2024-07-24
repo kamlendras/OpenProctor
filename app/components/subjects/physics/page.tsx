@@ -12,14 +12,15 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 export default function TypographyHeadline() {
   return (
     <>
-    <Stack spacing={1.5}>
-      <Typography  level="title-lg" >1. If the sizes of charged bodies are very small compared to the distances between them, we treat them as ____________.</Typography>
+    <Stack spacing={2}>
+      
+      <Typography  level="h3" >1. The density of a solid ball is to be determined in an experiment. The diameter of the ball is measured with a screw gauge, whose pitch is 0.5 mm and there are 50 divisions on the circular scale. The reading on the main scale is 2.5 mm and that on the circular scale is 20 divisions. If the measured mass of the ball has a relative error of 2%, the relative percentage error in the density is</Typography>
       <FormControl>
       <RadioGroup  name="radio-buttons-group">
-        <Radio value="1" label="Zero charges" variant="outlined" size="md"/>
-        <Radio value="2" label="Point charges" variant="outlined" />
-        <Radio value="3" label="Single charge" variant="outlined" />
-        <Radio value="4" label="No charges" variant="outlined" />
+        <Radio value="1" label="0.9%" variant="outlined" size="lg"/>
+        <Radio value="2" label="2.4%" variant="outlined" size="lg" />
+        <Radio value="3" label="3.1%" variant="outlined"  size="lg"/>
+        <Radio value="4" label="4.2%" variant="outlined"  size="lg"/>
      
       </RadioGroup>
     </FormControl>

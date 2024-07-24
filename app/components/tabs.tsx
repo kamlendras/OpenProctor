@@ -1,27 +1,26 @@
-import * as React from 'react';
-import Tabs from '@mui/joy/Tabs';
-import TabList from '@mui/joy/TabList';
-import Tab, { tabClasses } from '@mui/joy/Tab';
-import TabPanel from '@mui/joy/TabPanel';
-import ListItemDecorator from '@mui/joy/ListItemDecorator';
-import Physics from "./subjects/physics/page"
+import * as React from "react";
+import Tabs from "@mui/joy/Tabs";
+import TabList from "@mui/joy/TabList";
+import Tab, { tabClasses } from "@mui/joy/Tab";
+import TabPanel from "@mui/joy/TabPanel";
+import ListItemDecorator from "@mui/joy/ListItemDecorator";
+import Physics from "./subjects/physics/page";
 export default function TabsBasic() {
   return (
-    <Tabs 
-    // aria-label="Basic tabs" defaultValue={0}
-    variant="soft"
-    aria-label="Pricing plan"
-    defaultValue={0}
-    sx={{
-      // width: 343,
-      height:"85vh",
-      borderRadius: 'lg',
-      boxShadow: 'lg',
-      overflow: 'auto',
-    }}
-    
+    <Tabs
+      // aria-label="Basic tabs" defaultValue={0}
+      variant="soft"
+      aria-label="Pricing plan"
+      defaultValue={0}
+      sx={{
+        // width: 343,
+        height: "85vh",
+        borderRadius: "lg",
+        boxShadow: "lg",
+        overflow: "auto",
+      }}
     >
-      <TabList
+      {/* <TabList
       disableUnderline
       tabFlex={1}
       sx={{
@@ -36,36 +35,83 @@ export default function TabsBasic() {
             outlineOffset: '-4px',
           },
         },
-      }}
-      
-      
+      }} */}
+      <TabList
+        disableUnderline
+        tabFlex={1}
+        sx={{
+          // pt: 1,
+          // justifyContent: 'center',
+          [`&& .${tabClasses.root}`]: {
+            //   flex: 'initial',
+            //   bgcolor: 'transparent',
+            //   '&:hover': {
+            //     bgcolor: 'transparent',
+            //   },
+            [`&.${tabClasses.selected}`]: {
+              color: "primary.plainColor",
+              "&::after": {
+                height: 3,
+                // width:50,
+                borderRadius: 8,
+                // borderTopLeftRadius: 3,
+                // borderTopRightRadius: 3,
+                bgcolor: "primary.500",
+              },
+            },
+          },
+        }}
       >
-        <Tab disableIndicator variant="soft" ><ListItemDecorator>
-        <img src="phy.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>Physics</Tab>
-        <Tab disableIndicator variant="soft" >
-        <ListItemDecorator>
-        <img src="chem.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>
-            Chemistry</Tab>
-        <Tab disableIndicator variant="soft" >  <ListItemDecorator>
-        <img src="math3.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>Mathematics</Tab>
-            <Tab disableIndicator variant="soft" >  <ListItemDecorator>
-        <img src="bio.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>Biology</Tab>
-            <Tab disableIndicator variant="soft" >  <ListItemDecorator>
-        <img src="eco.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>Economics</Tab>
-            <Tab disableIndicator variant="soft" >  <ListItemDecorator>
-        <img src="res.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>Reasoning</Tab>
-            <Tab disableIndicator variant="soft" >  <ListItemDecorator>
-        <img src="comp.svg" alt="devices" width="30" height="30" />
-            </ListItemDecorator>Computer</Tab>
+        <Tab>
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="phy.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Physics
+        </Tab>
+        <Tab>
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="beaker.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Chemistry
+        </Tab>
+        <Tab>
+          {" "}
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="math3.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Mathematics
+        </Tab>
+        <Tab>
+          {" "}
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="bio.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Botany
+        </Tab>
+        <Tab>
+          {" "}
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="earth.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Geography
+        </Tab>
+        <Tab>
+          {" "}
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="res.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Reasoning
+        </Tab>
+        <Tab>
+          {" "}
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src="comp.svg" alt="devices" width="30" height="30" />
+          </ListItemDecorator>
+          Computer
+        </Tab>
       </TabList>
       <TabPanel value={0}>
-       <Physics/>
+        <Physics />
       </TabPanel>
       <TabPanel value={1}>
         <b>Second</b> tab panel

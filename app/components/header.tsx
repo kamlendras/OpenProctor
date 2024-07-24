@@ -5,9 +5,7 @@ import Stack from "@mui/joy/Stack";
 import ColorSchemeToggle from "./ColorSchemeToggle";
 import Link from "next/link";
 import Button from "@mui/joy/Button";
-const items = [
-  { imageLight: 'url("/icon_black.svg")', imageDark: 'url("/icon_white.svg")' },
-];
+import Typography from '@mui/joy/Typography';
 
 export default function Header() {
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
@@ -16,7 +14,6 @@ export default function Header() {
     setSelectedItemIndex(index);
   };
 
-  const selectedFeature = items[selectedItemIndex];
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const [open, setOpen] = React.useState(false);
   return (
@@ -37,19 +34,8 @@ export default function Header() {
         // sx={{ display: { xs: "none", sm: "flex" } }}
       >
         <div style={{ display: "flex" }}>
-          <Box
-            sx={{
-              mt: 1,
-              ml: 5,
-              width: 227,
-              height: 60,
-              backgroundSize: "contain",
-              backgroundImage: (theme) =>
-                theme.palette.mode === "light"
-                  ? items[selectedItemIndex].imageLight
-                  : items[selectedItemIndex].imageDark,
-            }}
-          />
+        <img src="/icon.svg" width="40" height="40"/> 
+        <Typography level="h1" >    Open Proctor</Typography>
         </div>
       </Stack>
 

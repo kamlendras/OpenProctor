@@ -16,10 +16,12 @@
     "@mui/joy": "^5.0.0-beta.48",
     "next": "14.2.5",
     "react": "^18",
-    "react-camera-pro": "^1.4.0",
     "react-dom": "^18",
+    "react-full-screen": "^1.1.1",
     "react-timer-hook": "^3.0.7",
-    "react-webcam": "^7.2.0"
+    "react-webcam": "^7.2.0",
+    "recharts": "^2.12.7",
+    "use-count-up": "^3.0.1"
   },
   "devDependencies": {
     "typescript": "^5",
