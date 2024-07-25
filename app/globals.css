@@ -23,3 +23,9 @@ body{
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+.pie{
+  /* width: 100px;
+  height: 100px; */
+  position: relative;
+  bottom: 100px;
+}

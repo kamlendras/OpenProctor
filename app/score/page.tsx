@@ -8,6 +8,7 @@ import S4 from "../components/score/s4";
 import S5 from "../components/score/s5";
 import S6 from "../components/score/s6";
 import S7 from "../components/score/s7";
+import Pie from "../components/score/pie"
 import Typography from "@mui/joy/Typography";
 import Sheet from "@mui/joy/Sheet";
 import Stack from "@mui/joy/Stack";
@@ -16,7 +17,7 @@ export default function LinearProgressDeterminate() {
   return (
     <>
     <Grid container spacing={2} sx={{ flexGrow: 1 }}>
-    <Grid xs={6}>
+    <Grid xs={4}>
     <Sheet
             variant="soft"
             color="neutral"
@@ -63,7 +64,7 @@ export default function LinearProgressDeterminate() {
       </Stack>
       </Sheet>
       </Grid>
-      <Grid xs={6}>
+      <Grid xs={4}>
       <Sheet
             variant="soft"
             color="neutral"
@@ -95,8 +96,14 @@ export default function LinearProgressDeterminate() {
       </Stack>
       </Sheet>
       </Grid>
+      <Grid xs={4}>
+      <div className="pie">
+      <Pie/>
+      </div>
+      </Grid>
       </Grid>
       <br/>
+      
       <Sheet variant="soft" color="neutral" sx={{ p: 2, borderRadius: "lg" }}>
         <Grid container spacing={2} sx={{ flexGrow: 1 }}>
           <Grid xs={3}>
