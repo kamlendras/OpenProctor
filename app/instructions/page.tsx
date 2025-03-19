@@ -8,7 +8,6 @@ import Button from "@mui/joy/Button";
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import Grid from "@mui/joy/Grid";
 import Sheet from "@mui/joy/Sheet";
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 export default function TypographyScales() {
   const handle = useFullScreenHandle();
