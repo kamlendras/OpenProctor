@@ -98,7 +98,7 @@ export default function TypographyScales() {
       <Grid xs={11}></Grid>
       <Grid xs={1}>
       <Link href="/">
-      <Button size="lg" sx={{ m: 1 }} endDecorator={<ArrowForwardIosRoundedIcon  />} onClick={handle.enter}>START </Button>        
+      <Button size="lg" sx={{ m: 1 }} endDecorator={<ArrowForwardIosRoundedIcon  />} >START </Button>        
           </Link>
       </Grid>
       </Grid>
