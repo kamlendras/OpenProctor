@@ -1,4 +1,5 @@
 "use client";
+import Typography from '@mui/joy/Typography';
 import Tabs from "./components/Tabs"
 import React, { useState, useRef, useEffect } from "react";
 import Sheet from "@mui/joy/Sheet";
@@ -18,6 +19,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './globals.css';
+import QRCode from 'react-qr-code';
 
 export default function Home() {
 
@@ -91,9 +93,35 @@ export default function Home() {
               color="neutral"
               sx={{ p: 0.5, borderRadius: "lg" }}
             >
-
-              something
+              <Grid container>
+  <Grid xs={5}><Typography level="title-md">Name:</Typography></Grid><Grid xs={7}><Typography level="title-md">Franklin B. McDaniels</Typography></Grid>
+  <Grid xs={5}><Typography level="title-md">Roll No:</Typography></Grid><Grid xs={7}><Typography level="title-md">767397348</Typography></Grid>
+  <Grid xs={5 }><Typography level="title-md">DOB:</Typography></Grid> <Grid xs={7}><Typography level="title-md">07/16/2002</Typography></Grid>
+  <Grid xs={5}><Typography level="title-md">School No:</Typography></Grid><Grid xs={7}><Typography level="title-md">89200</Typography></Grid>
+  <Grid xs={5}><Typography level="title-md">Centre No:</Typography></Grid><Grid xs={7}><Typography level="title-md">87382</Typography></Grid>
+  <Grid xs={5}><Typography level="title-md">Test:</Typography></Grid><Grid xs={7}><Typography level="title-md">NTC</Typography></Grid>
+  <Grid xs={5}><Typography level="title-md">Test Duration:</Typography></Grid><Grid xs={7}><Typography level="title-md">3 hours</Typography></Grid>
+  <Grid xs={5}><Typography level="title-md">Test Mode:</Typography></Grid><Grid xs={7}><Typography level="title-md" color="success">Online</Typography></Grid>
+  </Grid>
+  
             </Sheet>
+
+            <Sheet
+              variant="soft"
+              color="neutral"
+              sx={{ p: 1,m:2, borderRadius: "lg" }}
+            >
+<div style={{ background: 'white', padding: '16px' }}>
+
+            <QRCode
+    size={100}
+    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+    value="jakjxadcscfs72797394738973947809280198309801232"
+    viewBox={`0 0 256 256`}
+  />
+</div>
+
+ </Sheet>
           </Grid>
           <Grid xs={12}>
             <Sheet
