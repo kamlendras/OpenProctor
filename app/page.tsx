@@ -21,15 +21,7 @@ import './globals.css';
 
 export default function Home() {
 
-  useEffect(() => {
-    const handleContextmenu = e => {
-      e.preventDefault()
-    }
-    document.addEventListener('contextmenu', handleContextmenu)
-    return function cleanup() {
-      document.removeEventListener('contextmenu', handleContextmenu)
-    }
-  }, [])
+
 
 
 
