@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import './../page.module.css';
+
 import { Pagination, Navigation } from 'swiper/modules';
 import Stack from '@mui/joy/Stack';
 import Typography from '@mui/joy/Typography';
