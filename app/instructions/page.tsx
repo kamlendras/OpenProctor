@@ -10,7 +10,6 @@ import Grid from "@mui/joy/Grid";
 import Sheet from "@mui/joy/Sheet";
 
 export default function TypographyScales() {
-  const handle = useFullScreenHandle();
   return (
     <Sheet
     variant="soft"
