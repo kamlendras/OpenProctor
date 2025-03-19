@@ -1,0 +1,47 @@
+<svg width="340" height="310" viewBox="0 0 340 310" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+<marker id="Arrow000" orient="auto" overflow="visible">
+<path d="M-1.32 0 5.23-2.4a4.1 4.1 0 0 0 0 4.82Z" stroke="#000" stroke-width=".38"/>
+</marker>
+<marker id="Arrow438AA5" orient="auto" overflow="visible">
+<path d="M-1.32 0 5.23-2.4a4.1 4.1 0 0 0 0 4.82Z" fill="#438AA5" stroke="#438AA5" stroke-width=".38"/>
+</marker>
+<g stroke="#D8D8D8" stroke-width="3">
+<path d="M63.59 111.13l93.77 49.85 125.43-30.65-93.77-49.85Z" fill="#F9982D"/>
+<path d="M157.36 160.98V296.71l125.43-30.65V130.33Z" fill="#FCE880"/>
+<path d="M63.59 111.13l93.77 49.85V296.71L63.59 246.86Z" fill="#E46341"/>
+</g>
+<g fill="none" stroke="#000" stroke-width="3" marker-start="url(#Arrow000)">
+<path d="m210 138-40-20"/>
+<path d="m114 132 56-14"/>
+<path d="m170 18v100"/>
+<path d="m149 227-40-20"/>
+<path d="m109 157v50"/>
+<path d="m29 227 80-20"/>
+<path d="m220 159v60"/>
+<path d="m180 229 40-10"/>
+<path d="m300 259-80-40"/>
+<g stroke="#438AA5" marker-start="url(#Arrow438AA5)">
+<path d="m154 52 16 66"/>
+<path d="m69 207h40"/>
+<path d="m260 229-40-10"/>
+</g>
+</g>
+<g font-family="Noto Serif">
+<g font-size="26" transform="scale(1.1,1)">
+<text x="7.27" y="212">T<tspan dy="-10" font-size="22">(<tspan dy="-2" font-size="16">e<tspan dy="3" font-size="13">1</tspan></tspan><tspan dy="-1">)</tspan></tspan></text>
+<text x="206.8" y="217.5">T<tspan dy="-10" font-size="22">(<tspan dy="-2" font-size="16">e<tspan dy="3" font-size="13">2</tspan></tspan><tspan dy="-1">)</tspan></tspan></text>
+<text x="85.5" y="64">T<tspan dy="-10" font-size="22">(<tspan dy="-2" font-size="16">e<tspan dy="3" font-size="13">3</tspan></tspan><tspan dy="-1">)</tspan></tspan></text>
+</g>
+<g font-size="20" transform="scale(1,1.2)">
+<text x="20" y="206"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">11</tspan></text>
+<text x="111" y="203"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">21</tspan></text>
+<text x="70" y="136"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">31</tspan></text>
+<text x="181" y="213"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">12</tspan></text>
+<text x="293" y="205"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">22</tspan></text>
+<text x="178" y="151"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">32</tspan></text>
+<text x="135" y="119"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">13</tspan></text>
+<text x="191" y="95"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">23</tspan></text>
+<text x="182" y="29"><tspan font-style="italic">σ</tspan><tspan dx="1.5" dy="3.2" font-size="16">33</tspan></text>
+</g>
+</g>
+</svg>

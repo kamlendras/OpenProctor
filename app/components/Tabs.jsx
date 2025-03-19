@@ -4,7 +4,7 @@ import TabList from "@mui/joy/TabList";
 import Tab, { tabClasses } from "@mui/joy/Tab";
 import TabPanel from "@mui/joy/TabPanel";
 import ListItemDecorator from "@mui/joy/ListItemDecorator";
-import Physics from "./subjects/physics/page";
+import TabsPanel from "./TabsPanel";
 export default function TabsBasic() {
   return (
     <Tabs
@@ -111,7 +111,7 @@ export default function TabsBasic() {
         </Tab>
       </TabList>
       <TabPanel value={0}>
-        <Physics />
+        <TabsPanel />
       </TabPanel>
       <TabPanel value={1}>
         <b>Second</b> tab panel

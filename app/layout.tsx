@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
 import '@fontsource/inter';
 import "./globals.css";
 import Header from './components/header';
 import { CssVarsProvider } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Open Proctor",
@@ -20,11 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body 
-    // className={inter.className}
      >
     <CssVarsProvider disableTransitionOnChange>
     <CssBaseline />
-    <Header />
+  <Header/>
       {children}
       </CssVarsProvider>
       </body>

@@ -1,3 +1,4 @@
+
 body{
   padding: 1rem;
 }
@@ -11,8 +12,6 @@ body{
   bottom: 2rem;
 }
 
-
-
 .webcam{
   z-index: 1000;
 }
@@ -24,8 +23,33 @@ body{
   z-index: -1;
 }
 .pie{
-  /* width: 100px;
-  height: 100px; */
   position: relative;
   bottom: 100px;
 }
+ .swiper {
+  width: 100%;
+  padding-bottom: 60px;
+} 
+
+
+
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 1;
+  background: #0B6BCB;
+  position: relative;
+  bottom: 0px;
+
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #1F7A1F;
+  
+}
+

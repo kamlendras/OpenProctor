@@ -17,10 +17,11 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-full-screen": "^1.1.1",
+    "react-simple-keyboard": "^3.8.55",
     "react-timer-hook": "^3.0.7",
     "react-webcam": "^7.2.0",
     "recharts": "^2.12.7",
+    "swiper": "^11.2.5",
     "use-count-up": "^3.0.1"
   },
   "devDependencies": {
