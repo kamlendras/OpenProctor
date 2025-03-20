@@ -18,7 +18,6 @@
     "react": "^18",
     "react-dom": "^18",
     "react-qr-code": "^2.0.15",
-    "react-simple-keyboard": "^3.8.55",
     "react-timer-hook": "^3.0.7",
     "react-webcam": "^7.2.0",
     "recharts": "^2.12.7",

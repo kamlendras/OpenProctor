@@ -4,7 +4,14 @@ import TabList from "@mui/joy/TabList";
 import Tab, { tabClasses } from "@mui/joy/Tab";
 import TabPanel from "@mui/joy/TabPanel";
 import ListItemDecorator from "@mui/joy/ListItemDecorator";
-import TabsPanel from "./TabsPanel";
+import Subject1 from "./subject/1";
+import Subject2 from "./subject/2";
+import Subject3 from "./subject/3";
+import Subject4 from "./subject/4";
+import Subject5 from "./subject/5";
+import Subject6 from "./subject/6";
+import Subject7 from "./subject/7";
+import Test from "../../test.json"
 export default function TabsBasic() {
   return (
     <Tabs
@@ -64,72 +71,72 @@ export default function TabsBasic() {
       >
         <Tab>
           <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="phy.svg" alt="devices" width="30" height="30" />
+            <img src={Test.subjects.aicon} alt="icon" width="30" height="30" />
           </ListItemDecorator>
-          Physics
+          {Test.subjects.a}
         </Tab>
         <Tab>
           <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="beaker.svg" alt="devices" width="30" height="30" />
+            <img src={Test.subjects.bicon} alt="icon" width="30" height="30" />
           </ListItemDecorator>
-          Chemistry
-        </Tab>
-        <Tab>
-          {" "}
-          <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="math3.svg" alt="devices" width="30" height="30" />
-          </ListItemDecorator>
-          Mathematics
+          {Test.subjects.b}
         </Tab>
         <Tab>
           {" "}
           <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="bio.svg" alt="devices" width="30" height="30" />
+            <img src={Test.subjects.cicon} alt="icon" width="30" height="30" />
           </ListItemDecorator>
-          Botany
+          {Test.subjects.c}
         </Tab>
         <Tab>
           {" "}
           <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="earth.svg" alt="devices" width="30" height="30" />
+            <img src={Test.subjects.dicon} alt="icon" width="30" height="30" />
           </ListItemDecorator>
-          Geography
+          {Test.subjects.d}
         </Tab>
         <Tab>
           {" "}
           <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="res.svg" alt="devices" width="30" height="30" />
+            <img src={Test.subjects.eicon} alt="icon" width="30" height="30" />
           </ListItemDecorator>
-          Reasoning
+          {Test.subjects.e}
         </Tab>
         <Tab>
           {" "}
           <ListItemDecorator sx={{ mx: 0.01 }}>
-            <img src="comp.svg" alt="devices" width="30" height="30" />
+            <img src={Test.subjects.ficon} alt="icon" width="30" height="30" />
           </ListItemDecorator>
-          Computer
+          {Test.subjects.f}
+        </Tab>
+        <Tab>
+          {" "}
+          <ListItemDecorator sx={{ mx: 0.01 }}>
+            <img src={Test.subjects.gicon} alt="icon" width="30" height="30" />
+          </ListItemDecorator>
+          {Test.subjects.g}
         </Tab>
       </TabList>
       <TabPanel value={0}>
-        <TabsPanel />
+      <Subject1/>
       </TabPanel>
       <TabPanel value={1}>
-        <b>Second</b> tab panel
+      <Subject2/>
       </TabPanel>
       <TabPanel value={2}>
-        <b>Third</b> tab panel
+      <Subject3/>
       </TabPanel>
       <TabPanel value={3}>
-        <b>First</b> tab panel
+      <Subject4/>
       </TabPanel>
       <TabPanel value={4}>
-        <b>Second</b> tab panel
+      <Subject5/>
       </TabPanel>
       <TabPanel value={5}>
-        <b>Third</b> tab panel
+      <Subject6/>
       </TabPanel>
       <TabPanel value={6}>
-        <b>Third</b> tab panel
+      <Subject7/>
       </TabPanel>
     </Tabs>
   );
