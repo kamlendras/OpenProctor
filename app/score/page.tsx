@@ -13,6 +13,7 @@ import Typography from "@mui/joy/Typography";
 import Sheet from "@mui/joy/Sheet";
 import Stack from "@mui/joy/Stack";
 import { CountUp } from "use-count-up";
+import Test from "../../test.json"
 export default function LinearProgressDeterminate() {
   return (
     <>
@@ -108,8 +109,8 @@ export default function LinearProgressDeterminate() {
         <Grid container spacing={2} sx={{ flexGrow: 1 }}>
           <Grid xs={3}>
             <Stack direction="row" spacing={1}>
-              <img src="phy.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Physics</Typography>{" "}
+              <img src={Test.subjects.aicon} alt="icon" width="30" height="30" />
+              <Typography level="title-lg">   {Test.subjects.a}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>
@@ -118,8 +119,8 @@ export default function LinearProgressDeterminate() {
           <Grid xs={3}>
             <Stack direction="row" spacing={1}>
               {" "}
-              <img src="beaker.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Chemistry</Typography>{" "}
+              <img src={Test.subjects.bicon} alt="icon"  width="30" height="30" />
+              <Typography level="title-lg">     {Test.subjects.b}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>
@@ -128,8 +129,8 @@ export default function LinearProgressDeterminate() {
           <Grid xs={3}>
             {" "}
             <Stack direction="row" spacing={1}>
-              <img src="math3.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Mathematics</Typography>{" "}
+              <img src={Test.subjects.cicon} alt="icon" width="30" height="30" />
+              <Typography level="title-lg"> {Test.subjects.c}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>
@@ -138,8 +139,8 @@ export default function LinearProgressDeterminate() {
           <Grid xs={3}>
             {" "}
             <Stack direction="row" spacing={1}>
-              <img src="bio.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Botany</Typography>{" "}
+              <img src={Test.subjects.dicon} alt="icon" width="30" height="30" />
+              <Typography level="title-lg"> {Test.subjects.d}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>
@@ -148,8 +149,8 @@ export default function LinearProgressDeterminate() {
           <Grid xs={3}>
             {" "}
             <Stack direction="row" spacing={1}>
-              <img src="earth.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Geography</Typography>{" "}
+              <img src={Test.subjects.eicon} alt="icon"  width="30" height="30" />
+              <Typography level="title-lg"> {Test.subjects.e}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>
@@ -157,8 +158,8 @@ export default function LinearProgressDeterminate() {
           </Grid>
           <Grid xs={3}>
             <Stack direction="row" spacing={1}>
-              <img src="res.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Reasoning</Typography>{" "}
+              <img src={Test.subjects.ficon} alt="icon" width="30" height="30" />
+              <Typography level="title-lg">   {Test.subjects.f}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>
@@ -166,8 +167,8 @@ export default function LinearProgressDeterminate() {
           </Grid>
           <Grid xs={3}>
             <Stack direction="row" spacing={1}>
-              <img src="comp.svg" alt="devices" width="30" height="30" />
-              <Typography level="title-lg">Computer</Typography>{" "}
+              <img src={Test.subjects.gicon} alt="icon" width="30" height="30" />
+              <Typography level="title-lg">     {Test.subjects.g}</Typography>{" "}
             </Stack>
           </Grid>
           <Grid xs={9}>

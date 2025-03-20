@@ -130,7 +130,7 @@ export default function Home() {
               <React.Fragment>
 
                 <Button fullWidth size="lg" onClick={() => setOpen(true)}>
-                  Summit Test
+                  Submit Test
                 </Button>
                 <Modal open={open} onClose={() => setOpen(false)}>
                   <ModalDialog variant="outlined" role="alertdialog">
