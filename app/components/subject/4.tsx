@@ -17,7 +17,7 @@ import RadioGroup from '@mui/joy/RadioGroup';
 export default function TypographyHeadline() {
     const pagination = {
         clickable: true,
-        renderBullet: function (index, className) {
+        renderBullet: function (index: number, className: string) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
     };
