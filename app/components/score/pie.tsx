@@ -1,5 +1,4 @@
 "use client"
-// import "./styles.css";
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from "recharts";
 

@@ -1,11 +1,4 @@
 "use client"
-// export default function LinearProgressDeterminate() {
-//     return (
-//       <>
-   
-//       </>
-//       );
-//     }
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 

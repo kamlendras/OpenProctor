@@ -23,7 +23,7 @@ community include:
 * Accepting responsibility and apologizing to those affected by our mistakes,
   and learning from the experience
 * Focusing on what is best not just for us as individuals, but for the overall
-  community
+  community 
 
 Examples of unacceptable behavior include:
 
@@ -35,6 +35,7 @@ Examples of unacceptable behavior include:
   without their explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
+* Tagging maintainers or projects members without being one yourself
 
 ## Enforcement Responsibilities
 
@@ -60,7 +61,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-<kamlendrax@gmail.com>.
+<https://matrix.to/#/#opensourceprojects:matrix.org>.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

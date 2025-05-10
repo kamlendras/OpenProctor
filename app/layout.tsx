@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import '@fontsource/inter';
+import "@fontsource/inter";
 import "./globals.css";
-import Header from './components/header';
+import Header from "./components/header";
 import { CssVarsProvider } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
 
@@ -16,15 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-    <body 
-     >
-    <CssVarsProvider disableTransitionOnChange>
-    <CssBaseline />
-  <Header/>
-      {children}
-      </CssVarsProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <CssVarsProvider disableTransitionOnChange defaultMode="dark">
+          <CssBaseline />
+          <Header />
+          {children}
+        </CssVarsProvider>
       </body>
-  </html>
+    </html>
   );
 }
