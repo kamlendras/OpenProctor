@@ -11,7 +11,7 @@ Open Proctor is an open-source online proctoring software designed to provide a 
 
 ## Demo
 
-Experience Open Proctor live at our website: [openproctor.vercel.app](https://open-proctor.web.app/).
+Experience Open Proctor live at our website: [open-proctor.web.app](https://open-proctor.web.app/).
 
 ## Getting Started
 
