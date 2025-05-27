@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/pie.js", "app/components/subject/1.tsx", "app/components/timer.jsx", "middleware.ts", "app/signin/page.js", "app/signup/page.js", "app/login/page.js", "config.ts", "pages/test/[subject].js", "pages/login.js", "pages/signup.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/pie.js", "app/components/subject/1.tsx", "app/components/timer.jsx", "middleware.ts", "app/signin/page.js", "app/signup/page.js", "app/login/page.js", "config.ts", "pages/test/[subject].js", "pages/login.js", "pages/signup.js", "pages/_app.tsx", "components/CustomWebcam.tsx"],
   "exclude": ["node_modules"]
 }

@@ -9,6 +9,7 @@ import Button from "@mui/joy/Button";
 import Typography from "@mui/joy/Typography";
 import { CssVarsProvider } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
+
 export default function Layout({ children }) {
   const { currentUser, logout } = useAuth();
 
@@ -27,9 +28,13 @@ export default function Layout({ children }) {
 
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const [open, setOpen] = React.useState(false);
+   
+
   return (
+        
     <CssVarsProvider disableTransitionOnChange defaultMode="dark">
       <CssBaseline />
+      
       <div className="min-h-screen bg-gray-100">
         <nav>
           <Box
@@ -89,5 +94,6 @@ export default function Layout({ children }) {
         <main>{children}</main>
       </div>
     </CssVarsProvider>
+ 
   );
 }
